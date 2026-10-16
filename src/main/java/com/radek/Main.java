@@ -6,34 +6,13 @@ public class Main {
     public static void main(String[] args) {
 
 
-        int cisloA = 7;
-        int cisloB = -2;
-        int cisloC = 0;
+        int rok = 2026;
 
-        if (cisloA > 0) {
-            System.out.println("čísloA " + cisloA + " je kladné ");
-        } else if (cisloA < 0) {
-            System.out.println("čísloA " + cisloA + " je záporné ");
+
+        if ((rok % 4 == 0 && rok % 100 != 0) || rok % 400 == 0) {
+            System.out.println("rok " + rok + " je přestupný");
         } else {
-            System.out.println("čísloA " + cisloA + " je 0 ");
+            System.out.println("rok " + rok + " není přestupný");
         }
-
-        if (cisloB > 0) {
-            System.out.println("čísloB " + cisloB + " je kladné ");
-        } else if (cisloB < 0) {
-            System.out.println("čísloB " + cisloB + " je záporné ");
-        } else {
-            System.out.println("čísloB " + cisloB + " je 0 ");
-        }
-
-        if (cisloC > 0) {
-            System.out.println("čísloC " + cisloC + " je kladné ");
-        } else if (cisloC < 0) {
-            System.out.println("čísloC " + cisloC + " je záporné ");
-        } else {
-            System.out.println("čísloC " + cisloC + " je 0 ");
-        }
-
-
     }
 }
