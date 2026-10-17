@@ -17,6 +17,6 @@ public class Main {
 
        vypisZnamenko(1);
        vypisZnamenko(-9);
-       vypisZnamenko("ahoj");
+       vypisZnamenko(0);
     }
 }
