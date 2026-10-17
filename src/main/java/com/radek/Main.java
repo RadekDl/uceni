@@ -27,6 +27,14 @@ public class Main {
         }
     }
 
+    static void operace (String znak){
+        switch (znak){
+            case "+" -> System.out.println("sčítání");
+            case "-" -> System.out.println("odčítání");
+            default -> System.out.println("zadej '+' a nebo '-'!");
+        }
+    }
+
 
 
     public static void main(String[] args) {
@@ -38,6 +46,13 @@ public class Main {
         jeVikend(8);
         jeVikend(3);
         jeVikend(7);
+
+        operace("+");
+        operace("-");
+        operace("/");
+
+        System.out.println('+' + 1);
+        System.out.println(1 + 2 + "a" + (1 + 2));
 
 
     }
