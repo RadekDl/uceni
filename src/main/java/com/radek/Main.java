@@ -32,11 +32,13 @@ public class Main {
     public static void main(String[] args) {
 
             try {
-                System.out.println(vypocitej(4, 0,'x'));
+                System.out.println(vypocitej(4, 0,'+'));
+                System.out.println(vypocitej(4, 0, '*'));
+                System.out.println(vypocitej(5, 0, '/'));
 
 
             } catch (ArithmeticException e) {
-                System.out.println("chyby výpočtu: " + e.getMessage());
+                System.out.println("chyba výpočtu: " + e.getMessage());
 
             }catch (IllegalArgumentException e){
                 System.out.println("chyba vstupu: " + e.getMessage());
