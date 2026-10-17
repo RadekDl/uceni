@@ -3,20 +3,42 @@ package com.radek;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    static void vypisZnamenko( int cislo){
-        if (cislo > 0){
-            System.out.println(cislo +" je kladné");
-        } else if (cislo < 0) {
-            System.out.println(cislo + " je záporné");
-        } else {
-            System.out.println("zadal jsi " +cislo);
+
+    static void nazevDne(int cislo){
+        switch (cislo) {
+            case 1 -> System.out.println("pondělí");
+            case 2 -> System.out.println("úterý");
+            case 3 -> System.out.println("středa");
+            case 4 -> System.out.println("čtvrtek");
+            case 5 -> System.out.println("pátek");
+            case 6 -> System.out.println("sobota");
+            case 7 -> System.out.println("neděle");
+            default -> System.out.println("zadal jsi číslo mimo rozsah 1-7 včetně");
+
+        }
+
+    }
+
+    static void jeVikend(int cislo){
+        switch (cislo){
+            case 1, 2, 3, 4, 5 -> System.out.println("je pracovní den");
+            case 6, 7 -> System.out.println("je víkend");
+            default -> System.out.println("nezadal jsi číslo od 1 po 7 pro nějaký den");
         }
     }
 
+
+
     public static void main(String[] args) {
 
-       vypisZnamenko(1);
-       vypisZnamenko(-9);
-       vypisZnamenko(0);
+        nazevDne(1);
+        nazevDne(6);
+        nazevDne(9);
+
+        jeVikend(8);
+        jeVikend(3);
+        jeVikend(7);
+
+
     }
 }
