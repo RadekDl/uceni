@@ -32,15 +32,28 @@ public class Main {
 
         try {
             System.out.println(vypocitej(4, 0, '+'));
+        } catch (IllegalArgumentException | ArithmeticException e) {
+            System.out.println("chyba vstupu u sčítání: " + e.getClass().getSimpleName()+" "+e.getMessage());
+        }
+        try {
             System.out.println(vypocitej(4, 0, '*'));
+
+        } catch (ArithmeticException | IllegalArgumentException e) {
+            System.out.println("chyba vstupu násobení: "+ e.getClass().getSimpleName()+" "+ e.getMessage());
+        }
+        try {
             System.out.println(vypocitej(5, 0, '/'));
 
-
-        } catch (ArithmeticException e) {
-            System.out.println("chyba výpočtu: " + e.getMessage());
-
-        } catch (IllegalArgumentException e) {
-            System.out.println("chyba vstupu: " + e.getMessage());
+        } catch (ArithmeticException | IllegalArgumentException e) {
+            System.out.println("chyba výpočtu: " + e.getClass().getSimpleName()+" "+e.getMessage());
+        }
+        try {
+            System.out.println(vypocitej(89, 7, '-'));
+        } catch (ArithmeticException | IllegalArgumentException e) {
+            System.out.println("chyba vstupu u odčítání: " + e.getClass().getSimpleName()+" "+ e.getMessage());
         }
     }
 }
+// Co platí
+//samostatné bloky	pořadí záleží, konkrétní nahoře
+//A | B	pořadí nezáleží, typy nesmí být v příbuzenském vztahu
