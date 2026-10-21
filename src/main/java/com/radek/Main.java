@@ -5,30 +5,24 @@ package com.radek;
 public class Main {
     public static void main(String[] args) {
 
-        int max = 20;
-        int a = 1;
-        int coeficient =1;
+        int max = 22;
+        int a = 2;
+        int krok = 1;
 
-        for (int i = 1; i <= max; i++) {
-            if ( i < max) {
-                System.out.print(i + ", ");
-
-            } else {
-                System.out.println(i);
-            }
-        }
-
+//
         while (a <= max) {
-            if (a == max) {
-                System.out.print(a);
 
-            } else  {
+            if (a % 2 == 0) {
                 System.out.print(a + ", ");
+
+
             }
-            a++;
+            a = a + krok;
         }
-
     }
-
 }
+
+
+
+
 
