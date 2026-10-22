@@ -23,17 +23,28 @@ public class Main {
 //        }
 //        System.out.println();
 
+//        while (a <= max){
+//            if (a % 2 == 0){
+//                if (jeCisloPrvni == false){
+//                    System.out.print(", ");
+//                }
+//                System.out.print(a);
+//                jeCisloPrvni = false;
+//
+//            }
+//            a += krok;
+//
+//        }
+
         while (a <= max){
             if (a % 2 == 0){
-                if (jeCisloPrvni == false){
+                if(!jeCisloPrvni){
                     System.out.print(", ");
                 }
                 System.out.print(a);
-                jeCisloPrvni = false;
-
+                jeCisloPrvni = false ;
             }
             a += krok;
-
         }
     }
 }
