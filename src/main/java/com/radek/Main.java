@@ -5,51 +5,15 @@ package com.radek;
 public class Main {
     public static void main(String[] args) {
 
-        int max = 10;
-        int a = 1;
-        int krok = 1;
-        boolean jeCisloPrvni = true;
+       int pole1[] = {2, 6, 23, 12, 8};
+       for (int i = 0; i < pole1.length; i++){
+           System.out.println(pole1[i]);
+       }
+        System.out.println();
+       for (int cislo : pole1){
+           System.out.println(cislo);
+       }
 
-//        while (a <= max) {
-//            if (jeCisloPrvni == false && a % 2 == 0){
-//                System.out.print(", ");
-//
-//            }
-//            if (a % 2 == 0) {
-//                System.out.print(a);
-//                jeCisloPrvni = false;
-//            }
-//            a = a + krok;
-//        }
-//        System.out.println();
-
-        //jen jedna kontrola modulo
-
-//        while (a <= max){
-//            if (a % 2 == 0){
-//                if (jeCisloPrvni == false){
-//                    System.out.print(", ");
-//                }
-//                System.out.print(a);
-//                jeCisloPrvni = false;
-//
-//            }
-//            a += krok;
-//
-//        }
-
-        // negace (!boolean)
-
-        while (a <= max){
-            if (a % 2 == 0){
-                if(!jeCisloPrvni){
-                    System.out.print(", ");
-                }
-                System.out.print(a);
-                jeCisloPrvni = false ;
-            }
-            a += krok;
-        }
     }
 }
 
