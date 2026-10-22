@@ -5,9 +5,9 @@ package com.radek;
 public class Main {
     public static void main(String[] args) {
 
-        int max = 22;
+        int max = 10;
         int a = 1;
-        int krok = 3;
+        int krok = 1;
         boolean jeCisloPrvni = true;
 
 //        while (a <= max) {
