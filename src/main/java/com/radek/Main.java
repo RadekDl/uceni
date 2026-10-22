@@ -23,6 +23,8 @@ public class Main {
 //        }
 //        System.out.println();
 
+        //jen jedna kontrola modulo
+
 //        while (a <= max){
 //            if (a % 2 == 0){
 //                if (jeCisloPrvni == false){
@@ -35,6 +37,8 @@ public class Main {
 //            a += krok;
 //
 //        }
+
+        // negace (!boolean)
 
         while (a <= max){
             if (a % 2 == 0){
