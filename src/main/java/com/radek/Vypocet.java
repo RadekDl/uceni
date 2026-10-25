@@ -3,7 +3,7 @@ package com.radek;
 public class Vypocet {
     private VstupProVypocet vstupProVypocet;
 
-    public double vypocitej(double a, double b, char c) {
+    public double vypocitej(VstupProVypocet vstupProVypocet) {
 
 
         if (b == 0 && c == '/') {
