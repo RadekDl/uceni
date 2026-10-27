@@ -16,20 +16,24 @@ public class Main {
        vstupy[6] = new VstupProVypocet(0,5,'/');
        vstupy[7] = new VstupProVypocet(5,0,'/');
 
+       Vypocet vypocet = new Vypocet();
+
+       for (int i = 0; i < vstupy.length; i++) {
+          try {
+             double vysledek = vypocet.vypocitej(vstupy[i]);
+             System.out.println("výsledek příkladu: " + (i + 1) + " je: " + vysledek);
+          }
+             catch(ArithmeticException | IllegalArgumentException e){
+                System.out.println(e.getMessage()+ ", příklad "+ (i + 1));
 
 
 
-
-//        double[] a = {2, 67, 9, 34, 8, 10, 0, 5};
-//        double[] b = {3, 8, 0, 36, 4, 4, 5, 0};
-//        char[] c = {'*', '+', '/', '-', 'x','/', '/', '/'};
-
-
-
-
-
+          }
+       }
+       System.out.println(vstupy[0]);
     }
 }
+
 
 
 

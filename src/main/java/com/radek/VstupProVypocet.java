@@ -22,4 +22,9 @@ public class VstupProVypocet {
     public char getOperator() {
         return operator;
     }
+
+    @Override
+    public String toString() {
+        return  prvniCislo + " " + operator+ " " + druheCislo ;
+    }
 }
