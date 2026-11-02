@@ -10,19 +10,15 @@ public class VstupProVypocet {
         this.druheCislo = druheCislo;
         this.operator = operator;
     }
-
     public double getPrvniCislo() {
         return prvniCislo;
     }
-
     public double getDruheCislo() {
         return druheCislo;
     }
-
     public char getOperator() {
         return operator;
     }
-
     @Override
     public String toString() {
         return  prvniCislo + " " + operator+ " " + druheCislo ;
